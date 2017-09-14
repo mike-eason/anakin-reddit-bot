@@ -1,0 +1,17 @@
+{
+  "name": "anakin-bot",
+  "version": "1.0.0",
+  "description": "A stupid bot that responds to the darth plaguies story.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "/u/BlahYourHamster",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.14.2"
+  }
+}
