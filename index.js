@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const Snoowrap = require('snoowrap');
 const Snoostorm = require('snoostorm');
+const responses = require('./responses.json');
 
 const reddit = new Snoowrap({
     userAgent: 'anakin-reply-bot',
@@ -18,15 +19,20 @@ const stream = client.CommentStream({
     results: 100
 });
 
-const replyText = `Is it possible to learn this power?`;
-const lookFor = `i thought not. it's not a story the jedi would tell you. it's a sith legend. darth plagueis was a dark lord of the sith, so powerful and so wise he could use the force to influence the midichlorians to create life... he had such a knowledge of the dark side that he could even keep the ones he cared about from dying. the dark side of the force is a pathway to many abilities some consider to be unnatural. he became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. it's ironic he could save others from death, but not himself.`;
-
 stream.on('comment', c => {
-    if (c.body.toLowerCase().indexOf(lookFor) === -1)
+    console.log(c.body);
+
+    //TODO: make sure we're not replying to ourselves.
+
+    //Go through each possible response and look for a match.
+    const reply = findMessageReply(c.body);
+    
+    if (!reply)
         return;
 
-    console.log(`Found message, responding...`);
-    
+    console.log(`Found message: ${c.body}`);
+    console.log(`Responding with: ${reply}`);
+
     c.reply(replyText)
     .then(resp => {
         console.log(`Responded to message (${resp.id})`);
@@ -35,3 +41,16 @@ stream.on('comment', c => {
         console.error(err);
     });
 });
+
+function findMessageReply(text) {
+    for(let i = 0; i < responses.messages.length; i++) {
+        let regex = new RegExp(responses.messages[i].pattern, 'g');
+        let matches = regex.exec(text);
+
+        if (matches && matches.length > 0) {
+            return responses.messages[i].response;
+        }
+    }
+
+    return null;
+}
