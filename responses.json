@@ -26,7 +26,7 @@
             "response": "You underestimate my power!"
         },
         {
-            "pattern": "chancellor palpatine is evil(!?)$",
+            "pattern": "chancellor (\\w*) is evil(!?)$",
             "response": "From my point of view the Jedi are evil!"
         },
         {
@@ -34,11 +34,11 @@
             "response": "I don't want to hear any more about Obi-Wan. The Jedi turned against me. Don't you turn against me."
         },
         {
-            "pattern": "become the very thing you swore to destroy(.?)$",
+            "pattern": "become the very thing you swore to (\\w*)(.?)$",
             "response": "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire."
         },
         {
-            "pattern": "your new (.*)?$",
+            "pattern": "your new (\\w*)?$",
             "response": "Don't make me kill you."
         },
         {
@@ -66,7 +66,7 @@
             "response": "What happened to him?"
         },
         {
-            "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself)(.?!?)$",
+            "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself|themself|themselves)(.?!?)$",
             "response": "Is it possible to learn this power?"
         },
         {
