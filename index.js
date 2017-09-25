@@ -33,7 +33,7 @@ stream.on('comment', c => {
     console.log(`Found message: ${c.body}`);
     console.log(`Responding with: ${reply}`);
 
-    c.reply(replyText)
+    c.reply(reply)
     .then(resp => {
         console.log(`Responded to message (${resp.id})`);
     })
