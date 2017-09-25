@@ -20,19 +20,19 @@ const stream = client.CommentStream({
 });
 
 stream.on('comment', c => {
-    console.log(c.body);
+    console.log(c.author.name + ': ' + c.body);
 
     //TODO: make sure we're not replying to ourselves.
 
     //Go through each possible response and look for a match.
-    const reply = findMessageReply(c.body);
+    const reply = findMessageReply(c);
     
     if (!reply)
         return;
 
     console.log(`Found message: ${c.body}`);
     console.log(`Responding with: ${reply}`);
-
+    
     c.reply(reply)
     .then(resp => {
         console.log(`Responded to message (${resp.id})`);
@@ -42,13 +42,20 @@ stream.on('comment', c => {
     });
 });
 
-function findMessageReply(text) {
+function findMessageReply(comment) {
     for(let i = 0; i < responses.messages.length; i++) {
-        let regex = new RegExp(responses.messages[i].pattern, 'g');
-        let matches = regex.exec(text);
+        let regex = new RegExp(responses.messages[i].pattern, 'gi');
+        let matches = regex.exec(comment.body);
 
         if (matches && matches.length > 0) {
-            return responses.messages[i].response;
+            let message = responses.messages[i].response;
+
+            //Check if the message contains any keywords.
+            if (message.indexOf('$username') > -1) {
+                message = message.replace('$username', comment.author.name);
+            }
+
+            return message;
         }
     }
 

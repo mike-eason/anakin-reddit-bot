@@ -22,51 +22,51 @@
     ],
     "messages": [
         {
-            "pattern": "[I|i] have the high ground(!?)$",
+            "pattern": "i have the high ground(!?)$",
             "response": "You underestimate my power!"
         },
         {
-            "pattern": "[C|c]hancellor [P|p]alpatine is evil(!?)$",
+            "pattern": "chancellor palpatine is evil(!?)$",
             "response": "From my point of view the Jedi are evil!"
         },
         {
-            "pattern": "[O|o]bi[-|\\s][W|w]an was right[.|,] [Y|y]ou've changed(.?)$",
+            "pattern": "obi[-|\\s]wan was right[.|,] you've changed(.?)$",
             "response": "I don't want to hear any more about Obi-Wan. The Jedi turned against me. Don't you turn against me."
         },
         {
-            "pattern": "[Y|y]ou've become the very thing you swore to destroy(.?)$",
-            "response": "Don't lecture me, Obi-Wan! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire."
+            "pattern": "become the very thing you swore to destroy(.?)$",
+            "response": "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire."
         },
         {
-            "pattern": "[Y|y]our new empire?$",
+            "pattern": "your new (.*)?$",
             "response": "Don't make me kill you."
         },
         {
-            "pattern": "[M|m]y allegiance is to the [R|r]epublic, to democracy(!?)$",
+            "pattern": "my allegiance is to (.*), to (.*)(!?)$",
             "response": "If you're not with me, then you are my enemy."
         },
         {
-            "pattern": "[I|] will do what [I|i] must(.?)$",
+            "pattern": "i will do what i must(.?)$",
             "response": "You will try."
         },
         {
-            "pattern": "[B|b]ring balance to the force, not leave it in darkness(!?)$",
+            "pattern": "bring balance to (.*), not leave it in darkness(!?)$",
             "response": "I hate you!"
         },
         {
-            "pattern": "[D|d]id you ever hear the tragedy of [D|d]arth [P|p]lagueis [T|t]he [W|w]ise?",
+            "pattern": "did you ever hear the (.*) of (.*)?",
             "response": "No?"
         },
         {
-            "pattern": "[H|h]e could even keep the ones he cared about from dying(.?)$",
+            "pattern": "he could even keep the ones he cared about from dying(.?)$",
             "response": "He could actually save people from death?"
         },
         {
-            "pattern": "[T|t]he dark side of the [F|f]orce is a pathway to many abilities some consider to be unnatural(.?)$",
+            "pattern": "the dark side of the force is a pathway to many abilities some consider to be unnatural(.?)$",
             "response": "What happened to him?"
         },
         {
-            "pattern": "could save others from death(,?)(.{0,}?) but not himself(.?!?)$",
+            "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself)(.?!?)$",
             "response": "Is it possible to learn this power?"
         }
     ]
