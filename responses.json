@@ -50,7 +50,7 @@
             "response": "You will try."
         },
         {
-            "pattern": "bring balance to (.*), not leave it in darkness(!?)$",
+            "pattern": "bring balance to (.*), not leave it in (.*)(!?)$",
             "response": "I hate you!"
         },
         {
@@ -68,6 +68,10 @@
         {
             "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself)(.?!?)$",
             "response": "Is it possible to learn this power?"
+        },
+        {
+            "pattern": "you're a slave?",
+            "response": "I am a bot and my name is Anakin."
         }
     ]
 }
