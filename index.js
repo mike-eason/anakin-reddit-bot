@@ -22,7 +22,9 @@ const stream = client.CommentStream({
 stream.on('comment', c => {
     console.log(c.author.name + ': ' + c.body);
 
-    //TODO: make sure we're not replying to ourselves.
+    //make sure we're not replying to ourselves.
+    if (c.author.name === 'anakin-bot')
+        return;
 
     //Go through each possible response and look for a match.
     const reply = findMessageReply(c);
