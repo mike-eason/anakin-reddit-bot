@@ -27,6 +27,7 @@
         },
         {
             "pattern": "(is|are) evil(!?)$",
+            "ignorePattern": "jedi (is|are) evil(!?)$",
             "response": "From my point of view the Jedi are evil!"
         },
         {

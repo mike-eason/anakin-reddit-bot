@@ -46,11 +46,22 @@ stream.on('comment', c => {
 
 function findMessageReply(comment) {
     for(let i = 0; i < responses.messages.length; i++) {
-        let regex = new RegExp(responses.messages[i].pattern, 'gi');
+        let resp = responses.messages[i];
+
+        let regex = new RegExp(resp.pattern, 'gi');
         let matches = regex.exec(comment.body);
 
         if (matches && matches.length > 0) {
-            let message = responses.messages[i].response;
+            //Check the ignore pattern.
+            if (resp.ignorePattern) {
+                let ignoreRegex = new RegExp(resp.ignorePattern, 'gi');
+                let ignoreMatches = ignoreRegex.exec(comment.body);
+
+                if (ignoreMatches && ignoreMatches.length > 0)
+                    return;
+            }
+
+            let message = resp.response;
 
             //Check if the message contains any keywords.
             if (message.indexOf('$username') > -1) {
