@@ -39,7 +39,7 @@
             "response": "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire."
         },
         {
-            "pattern": "your new (\\w*)?$",
+            "pattern": "your new (\\w*)(\\W*)$",
             "response": "Don't make me kill you."
         },
         {
