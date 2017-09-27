@@ -55,7 +55,7 @@
             "response": "I hate you!"
         },
         {
-            "pattern": "did you ever hear the (.*) of (.*)?",
+            "pattern": "did you ever hear the (.*) of (.*)?$",
             "response": "No?"
         },
         {
@@ -71,7 +71,7 @@
             "response": "Is it possible to learn this power?"
         },
         {
-            "pattern": "you're a slave?",
+            "pattern": "you're a slave?$",
             "response": "I am a bot and my name is Anakin."
         }
     ]
