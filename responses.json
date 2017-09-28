@@ -55,7 +55,7 @@
             "response": "I hate you!"
         },
         {
-            "pattern": "did you ever hear the (.*) of (.*)?$",
+            "pattern": "did you ever hear the (.*) of (.*)\\?$",
             "response": "No?"
         },
         {
