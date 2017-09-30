@@ -139,25 +139,6 @@
             ]
         },
         {
-            "pattern": "why don'?t you listen to me\\?$",
-            "responses": [
-                "I try, Master.",
-                "I try, $username"
-            ]
-        },
-        {
-            "pattern": "don'?t look at me like that[.!]?$",
-            "response": "Why not?"
-        },
-        {
-            "pattern": "it makes me feel uncomfortable[.]?$",
-            "response": "Sorry m'lady"
-        },
-        {
-            "pattern": "to be (.*) is to be (.*)[.!]?$",
-            "response": "I'm a bot. I can be better than this."
-        },
-        {
             "pattern": "my goodness,? you'?ve grown[.!]?$",
             "responses": [
                 "So have you, grown more beautiful... for a human, I mean.",
@@ -174,10 +155,6 @@
                 "Obi-Wan is trying to turn you against me.",
                 "The moderators are trying to turn you against me."
             ]
-        },
-        {
-            "pattern": "he cares about us[.!]?$",
-            "response": "Us?"
         },
         {
             "pattern": "all I want is your love[.!]?$",
