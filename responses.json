@@ -22,7 +22,7 @@
     ],
     "messages": [
         {
-            "pattern": "i have the high ground[.!]?$",
+            "pattern": "i have the (.*)high ground[.!]?$",
             "response": "You underestimate my power!"
         },
         {
