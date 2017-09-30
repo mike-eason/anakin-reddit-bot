@@ -1,7 +1,7 @@
 {
     "replies": [
         {
-            "pattern": "[G|g]ood [B|b]ot",
+            "pattern": "good bot[.!]?$",
             "responses": [
                 "Thank you, master.",
                 "Yippeee!",
@@ -10,7 +10,7 @@
             ]
         },
         {
-            "pattern": "[B|b]ad [B|b]ot",
+            "pattern": "bad bot[.!]?$",
             "responses": [
                 "I'm not the Jedi I should be.",
                 "You underestimate my power!",
@@ -22,20 +22,20 @@
     ],
     "messages": [
         {
-            "pattern": "i have the high ground(!?)$",
+            "pattern": "i have the high ground[.!]?$",
             "response": "You underestimate my power!"
         },
         {
-            "pattern": "(is|are) evil(!?)$",
-            "ignorePattern": "jedi (is|are) evil(!?)$",
+            "pattern": "(is|are) evil[.!]?$",
+            "ignorePattern": "jedi (is|are) evil[.!]?$",
             "response": "From my point of view the Jedi are evil!"
         },
         {
-            "pattern": "obi[-|\\s]wan was right[.|,] you've changed(.?)$",
+            "pattern": "obi[-|\\s]wan was right[.|,] you've changed[.!]?$",
             "response": "I don't want to hear any more about Obi-Wan. The Jedi turned against me. Don't you turn against me."
         },
         {
-            "pattern": "become the very thing you swore to (\\w*)(.?)$",
+            "pattern": "become the very thing you swore to (\\w*)[.!]?$",
             "response": "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire."
         },
         {
@@ -43,15 +43,15 @@
             "response": "Don't make me kill you."
         },
         {
-            "pattern": "my allegiance is to (.*), to (.*)(!?)$",
+            "pattern": "my allegiance is to (.*), to (.*)[.!]?$",
             "response": "If you're not with me, then you are my enemy."
         },
         {
-            "pattern": "i will do what i must(.?)$",
+            "pattern": "i will do what i must[.!]?$",
             "response": "You will try."
         },
         {
-            "pattern": "bring balance to (.*), not leave it in (.*)(!?)$",
+            "pattern": "bring balance to (.*),? not leave it in (.*)[.!]?$",
             "response": "I hate you!"
         },
         {
@@ -59,20 +59,24 @@
             "response": "No?"
         },
         {
-            "pattern": "he could even keep the ones he cared about from dying(.?)$",
+            "pattern": "he could even keep the ones he cared about from dying[.]?$",
             "response": "He could actually save people from death?"
         },
         {
-            "pattern": "the dark side of the force is a pathway to many abilities some consider to be unnatural(.?)$",
+            "pattern": "the dark side of the force is a pathway to many abilities some consider to be unnatural[.]?$",
             "response": "What happened to him?"
         },
         {
-            "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself|themself|themselves)(.?!?)$",
+            "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself|themself|themselves)[.!]?$",
             "response": "Is it possible to learn this power?"
         },
         {
-            "pattern": "you're a slave?$",
+            "pattern": "you[']?re a slave\\?$",
             "response": "I am a bot and my name is Anakin."
+        },
+        {
+            "pattern": "not just the (.*)[,.]? but the (.*)[,]? and the (.*) too[.!]?$",
+            "response": "I hate them!"
         }
     ]
 }
