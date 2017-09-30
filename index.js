@@ -82,7 +82,14 @@ function findMessageReply(comment) {
                     return;
             }
 
-            let message = resp.response;
+            let message;
+
+            //if the response contains an array of responses, then pick
+            //a random response.
+            if (resp.responses)
+                message = resp.responses[Math.floor(Math.random() * resp.responses.length)];
+            else
+                message = resp.response;
 
             //Check if the message contains any keywords.
             if (message.indexOf('$username') > -1) {

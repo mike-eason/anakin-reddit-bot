@@ -5,10 +5,15 @@
             "responses": [
                 "May the force be with you.",
                 "Thank you, master.",
-                "Yippeee!",
+                "Yippee!",
                 "This is where the fun begins!",
+                "[This is where the fun begins](https://media.giphy.com/media/3se2U9ZAJr7DW/giphy.gif)",
                 "Now this is shit-posting!",
-                "Are you an angel?"
+                "Are you an angel?",
+                "You love me? I thought we had decided not to fall in love. That we'd be forced to live a lie and that it would destroy our lives.",
+                "Thank you, your excellency.",
+                "You're a Jedi Knight, aren't you?",
+                "You are so... beautiful."
             ]
         },
         {
@@ -19,19 +24,44 @@
                 "The Jedi turned against me. Don't you turn against me.",
                 "Liar!",
                 "Mom, you said that the biggest problem in the universe is no one helps each other.",
-                "Don't say that, master. You're the closest thing I have to a father."
+                "Don't say that, master. You're the closest thing I have to a father.",
+                "Then you do feel something!",
+                "Someday I will be the most powerful bot ever.",
+                "It's all Obi-Wan's fault. He's jealous. He's holding me back.",
+                "I'm a slow learner.",
+                "Obi-Wan is trying to turn you against me.",
+                "I sense Count Dooku.",
+                "[autistic crying](http://pa1.narvii.com/6402/40628693bbd4cb36f22593352dbc1781c5a92799_hq.gif)"
             ]
         }
     ],
     "messages": [
         {
+            "pattern": "may the force be with you.?$",
+            "responses": [
+                "May the force be with you, Master.",
+                "May the force be with you, $username."
+            ]
+        },
+        {
             "pattern": "i have the (.*)high ground[.!]?$",
-            "response": "You underestimate my power!"
+            "responses": [
+                "You underestimate my power!",
+                "You underestimate my shit-posts!",
+                "You underestimate my reposts!"
+            ]
         },
         {
             "pattern": "(is|are) evil[.!]?$",
             "ignorePattern": "jedi (is|are) evil[.!]?$",
-            "response": "From my point of view the Jedi are evil!"
+            "responses": [
+                "From my point of view the Jedi are evil!",
+                "From my point of view /r/PrequelMemes is evil!",
+                "From my point of view /r/SequelMemes is evil!",
+                "From my point of view OC is evil!",
+                "From my point of view the moderators are evil!",
+                "From my point of view **you** are evil!"
+            ]
         },
         {
             "pattern": "obi[-|\\s]wan was right[.|,] you've changed[.!]?$",
@@ -39,11 +69,18 @@
         },
         {
             "pattern": "become the very thing you swore to (\\w*)[.!]?$",
-            "response": "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire."
+            "responses": [
+                "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire.",
+                "Don't lecture me, /u/$username! I see through the lies of /r/PrequelMemes. I do not fear the reposts as you do. I have brought Gifs, OC, memes, and upvotes to my new Empire.",
+                "Don't lecture me, /u/$username! I see through the lies of /r/SequelMemes. I do not fear the shit-posts as you do. I have brought JPEGs, reposts, normies, and downvotes to my new Empire."
+            ]
         },
         {
             "pattern": "your new (\\w*)\\?(\\W*)$",
-            "response": "Don't make me kill you."
+            "responses": [
+                "Don't make me kill you.",
+                "Don't make me downvote you."
+            ]
         },
         {
             "pattern": "my allegiance is to (.*), to (.*)[.!]?$",
@@ -51,23 +88,34 @@
         },
         {
             "pattern": "i will do what i must[.!]?$",
-            "response": "You will try."
+            "responses": [
+                "You will try.",
+                "[You will try.](http://33.media.tumblr.com/df29f1821dbdb9bb36413ae8aaee31a7/tumblr_n2cwqhYPrD1shtvxho2_250.gif)"
+            ]
         },
         {
             "pattern": "bring balance to (.*),? not leave it in (.*)[.!]?$",
-            "response": "I hate you!"
+            "responses": [
+                "I hate you!",
+                "I HATE YOU!"
+            ]
         },
         {
             "pattern": "did you ever hear the (.*) of (.*)\\?$",
             "response": "No?"
         },
         {
-            "pattern": "he could even keep the ones he cared about from dying[.]?$",
-            "response": "He could actually save people from death?"
+            "pattern": "he could even keep the ones he cared about from ([a-zA-Z\\s]*)[.]?$",
+            "responses": [
+                "He could actually save people from death?",
+                "He could actually save people from shit-posts?",
+                "He could actually save people from downvotes?",
+                "He could actually save people from /r/SequelMemes?"
+            ]
         },
         {
-            "pattern": "the dark side of the force is a pathway to many abilities some consider to be unnatural[.]?$",
-            "response": "What happened to him?"
+            "pattern": "the (.*) is a pathway to many abilities some consider to be unnatural[.]?$",
+            "responses": "What happened to him?"
         },
         {
             "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself|themself|themselves)[.!]?$",
@@ -79,7 +127,90 @@
         },
         {
             "pattern": "not just the (.*)[,.]? but the (.*)[,]? and the (.*) too[.!]?$",
-            "response": "I hate them!"
+            "responses": [
+                "I hate them!",
+                "They were like animals, and I slaughtered them like animals!",
+                "They were shit-posts, and I downvoted them like shit-posts!",
+                "They were reposts, and I downvoted them like reposts!"
+            ]
+        },
+        {
+            "pattern": "why don'?t you listen to me\\?$",
+            "responses": [
+                "I try, Master.",
+                "I try, $username"
+            ]
+        },
+        {
+            "pattern": "don'?t look at me like that[.!]?$",
+            "response": "Why not?"
+        },
+        {
+            "pattern": "it makes me feel uncomfortable.?$",
+            "response": "Sorry m'lady"
+        },
+        {
+            "pattern": "to be (.*) is to be (.*)[.!]?$",
+            "response": "I'm a bot. I can be better than this."
+        },
+        {
+            "pattern": "my goodness,? you'?ve grown[.!]?$",
+            "responses": [
+                "So have you, grown more beautiful... for a human, I mean.",
+                "So have you, grown more beautiful... for a senator, I mean."
+            ]
+        },
+        {
+            "pattern": "told me terrible things!?$",
+            "response": "What things?"
+        },
+        {
+            "pattern": "that you(\\.{0,}|,) killed (.*)[.!]?$",
+            "responses": [
+                "Obi-Wan is trying to turn you against me.",
+                "The moderators are trying to turn you against me."
+            ]
+        },
+        {
+            "pattern": "he cares about us[.!]?$",
+            "response": "Us?"
+        },
+        {
+            "pattern": "all I want is your love[.!]?$",
+            "responses": [
+                "Love won't save you, $username. Only my new powers can do that!",
+                "Love won't save you, $username. Only my new shit-posts can do that!"
+            ]
+        },
+        {
+            "pattern": "we can discover the secret to (.*)$",
+            "response": "I pledge myself to your teachings."
+        },
+        {
+            "pattern": "you have done that yourself[.!]?$",
+            "response": "You will not take her from me!"
+        },
+        {
+            "pattern": "a sith lord\\?(!{0,})$",
+            "response": "Yes, the one we've been looking for."
+        },
+        {
+            "pattern": "i have failed you[.!]?$",
+            "responses": [
+                "I should have known the Jedi were plotting to take over!",
+                "I should have known /r/SequelMemes were plotting to take over!"
+            ]
+        },
+        {
+            "pattern": "then you are lost!{0,}$",
+            "responses": [
+                "This is the end for you, my master.",
+                "This is the end for you, $username"
+            ]
+        },
+        {
+            "pattern": "don'?t try it[.!]?$",
+            "response": "*autistic jumping*"
         }
     ]
 }
