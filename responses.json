@@ -3,20 +3,23 @@
         {
             "pattern": "good bot[.!]?$",
             "responses": [
+                "May the force be with you.",
                 "Thank you, master.",
                 "Yippeee!",
                 "This is where the fun begins!",
-                "Now this is shit-posting!"
+                "Now this is shit-posting!",
+                "Are you an angel?"
             ]
         },
         {
             "pattern": "bad bot[.!]?$",
             "responses": [
-                "I'm not the Jedi I should be.",
+                "I'm not the bot I should be.",
                 "You underestimate my power!",
                 "The Jedi turned against me. Don't you turn against me.",
                 "Liar!",
-                "I am a person and my name is Anakin."
+                "Mom, you said that the biggest problem in the universe is no one helps each other.",
+                "Don't say that, master. You're the closest thing I have to a father."
             ]
         }
     ],
