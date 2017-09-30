@@ -139,6 +139,14 @@
             ]
         },
         {
+            "pattern": "don'?t look at me like that[.!]?$",
+            "response": "Why not?"
+        },
+        {
+            "pattern": "it makes me feel uncomfortable[.]?$",
+            "response": "Sorry m'lady"
+        },
+        {
             "pattern": "my goodness,? you'?ve grown[.!]?$",
             "responses": [
                 "So have you, grown more beautiful... for a human, I mean.",
