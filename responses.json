@@ -37,7 +37,7 @@
     ],
     "messages": [
         {
-            "pattern": "may the force be with you.?$",
+            "pattern": "may the force be with you[.]?$",
             "responses": [
                 "May the force be with you, Master.",
                 "May the force be with you, $username."
