@@ -53,7 +53,7 @@
         },
         {
             "pattern": "(is|are) evil[.!]?$",
-            "ignorePattern": "jedi (is|are) evil[.!]?$",
+            "ignorePattern": "(jedi|\/r\/prequelmemes|\/r\/sequelmemes|oc|the mod(erators|s)|you) (is|are) evil[.!]?$",
             "responses": [
                 "From my point of view the Jedi are evil!",
                 "From my point of view /r/PrequelMemes is evil!",
@@ -105,7 +105,7 @@
             ]
         },
         {
-            "pattern": "did you ever hear the (.*) of (.*)\\?$",
+            "pattern": "(did you|have you) ever heard? the (.*) of (.*)\\?$",
             "response": "No?"
         },
         {
@@ -118,7 +118,7 @@
             ]
         },
         {
-            "pattern": "the (.*) is a pathway to many abilities some consider to be unnatural[.]?$",
+            "pattern": "is a pathway to many abilities some consider to be unnatural[.]?$",
             "response": "What happened to him?"
         },
         {
@@ -150,7 +150,7 @@
             "response": "Why not?"
         },
         {
-            "pattern": "it makes me feel uncomfortable.?$",
+            "pattern": "it makes me feel uncomfortable[.]?$",
             "response": "Sorry m'lady"
         },
         {
