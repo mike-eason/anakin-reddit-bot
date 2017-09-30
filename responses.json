@@ -64,8 +64,12 @@
             ]
         },
         {
-            "pattern": "obi[-|\\s]wan was right[.|,] you've changed[.!]?$",
-            "response": "I don't want to hear any more about Obi-Wan. The Jedi turned against me. Don't you turn against me."
+            "pattern": "was right[.|,] you've changed[.!]?$",
+            "responses": [
+                "The Jedi turned against me. Don't you turn against me.",
+                "The moderators turned against me. Don't you turn against me.",
+                "/r/PrequelMemes turned against me. Don't you turn against me."
+            ]
         },
         {
             "pattern": "become the very thing you swore to (\\w*)[.!]?$",
