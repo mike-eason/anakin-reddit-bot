@@ -119,7 +119,7 @@
         },
         {
             "pattern": "the (.*) is a pathway to many abilities some consider to be unnatural[.]?$",
-            "responses": "What happened to him?"
+            "response": "What happened to him?"
         },
         {
             "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself|themself|themselves)[.!]?$",
