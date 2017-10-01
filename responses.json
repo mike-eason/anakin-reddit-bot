@@ -116,13 +116,15 @@
             ]
         },
         {
+            "pattern": "he could even keep the ones he cared about from dying[.!]?$",
+            "responses": [
+                "He could actually save people from death?"
+            ]
+        },
+        {
             "pattern": "he could even keep the ones he cared about from ([a-zA-Z-_\\/\\s]*)[.!]?$",
             "responses": [
-                "He could actually save people from $0?",
-                "He could actually save people from death?",
-                "He could actually save people from shit-posts?",
-                "He could actually save people from downvotes?",
-                "He could actually save people from /r/SequelMemes?"
+                "He could actually save people from $0?"
             ]
         },
         {
