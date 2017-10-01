@@ -22,12 +22,13 @@
                 "I'm not the bot I should be.",
                 "You underestimate my power!",
                 "The Jedi turned against me. Don't you turn against me.",
+                "The moderators turned against me. Don't you turn against me.",
                 "Liar!",
                 "Mom, you said that the biggest problem in the universe is no one helps each other.",
                 "Don't say that, master. You're the closest thing I have to a father.",
                 "Then you do feel something!",
                 "Someday I will be the most powerful bot ever.",
-                "It's all Obi-Wan's fault. He's jealous. He's holding me back.",
+                "It's all Obi-Wan's fault. He's jealous. He's holding me back!",
                 "I'm a slow learner.",
                 "Obi-Wan is trying to turn you against me.",
                 "I sense Count Dooku.",
@@ -64,8 +65,9 @@
             ]
         },
         {
-            "pattern": "was right[.|,] you've changed[.!]?$",
+            "pattern": "([a-zA-Z-_\\/\\s]*) was right[.|,] you've changed[.!]?$",
             "responses": [
+                "$0 turned against me. Don't you turn against me.",
                 "The Jedi turned against me. Don't you turn against me.",
                 "The moderators turned against me. Don't you turn against me.",
                 "/r/PrequelMemes turned against me. Don't you turn against me."
@@ -114,8 +116,9 @@
             ]
         },
         {
-            "pattern": "he could even keep the ones he cared about from ([a-zA-Z\\s]*)[.]?$",
+            "pattern": "he could even keep the ones he cared about from ([a-zA-Z-_\\/\\s]*)[.!]?$",
             "responses": [
+                "He could actually save people from $0?",
                 "He could actually save people from death?",
                 "He could actually save people from shit-posts?",
                 "He could actually save people from downvotes?",
@@ -129,7 +132,7 @@
             ]
         },
         {
-            "pattern": "could save others from (.*)(,?)(.{0,}?) but not ([a-zA-Z\\s]*)[.!]?$",
+            "pattern": "could save others from (.*) but not ([a-zA-Z\\s]*)[.!]?$",
             "responses": [
                 "Is it possible to learn this power?"
             ]
