@@ -27,7 +27,7 @@ stream.on('comment', comment => {
     console.log(`${comment.author.name}: ${comment.body}`);
 
     //Go through each possible response and look for a match.
-    const reply = messages.extractReply(c);
+    const reply = messages.extractReply(comment, commentIds);
     
     if (!reply)
         return;
