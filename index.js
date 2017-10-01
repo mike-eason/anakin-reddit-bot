@@ -2,10 +2,10 @@ require('dotenv').config();
 
 const Snoowrap = require('snoowrap');
 const Snoostorm = require('snoostorm');
-const responses = require('./responses.json');
+const messages = require('./messages');
 
 const reddit = new Snoowrap({
-    userAgent: 'anakin-reply-bot',
+    userAgent: process.env.REDDIT_USER_AGENT,
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     username: process.env.REDDIT_USER,
@@ -20,85 +20,30 @@ const stream = client.CommentStream({
 });
 
 //Keep track of everything we have commented on, if we
-//find a reply to one of our comments we can check for good bot/bad bot.
-let commentIds = [];
+//find a reply to one of our comments we can check for a reply.
+let commentIds = []; //TODO: This technique could be better.
 
-stream.on('comment', c => {
-    console.log(c.author.name + ': ' + c.body);
-
-    //make sure we're not replying to ourselves.
-    if (c.author.name === 'anakin-bot')
-        return;
+stream.on('comment', comment => {
+    console.log(`${comment.author.name}: ${comment.body}`);
 
     //Go through each possible response and look for a match.
-    const reply = findMessageReply(c);
+    const reply = messages.extractReply(c);
     
     if (!reply)
         return;
 
-    console.log(`Found message: ${c.body}`);
+    console.log(`Found message: ${comment.body}`);
     console.log(`Responding with: ${reply}`);
     
-    c.reply(reply)
+    comment.reply(reply)
     .then(resp => {
-        console.log(`Responded to message (${resp.id})`);
+        console.log(`Responded to message.`);
 
+        //Add the comment id to the array, we'll use it to
+        //check if a user has replied to one of our comments.
         commentIds.push('t1_' + resp.id);
     })
     .catch(err => {
         console.error(err);
     });
 });
-
-function findMessageReply(comment) {
-    if (commentIds.includes(comment.parent_id)) {
-        //This comment is a reply to one of ours, check for a reply.
-        for(let i = 0; i < responses.replies.length; i++) {
-            let resp = responses.replies[i];
-            let regex = new RegExp(resp.pattern, 'gi');
-            let matches = regex.exec(comment.body);
-
-            if (matches && matches.length > 0) {
-                //Return a random response.
-                return resp.responses[Math.floor(Math.random() * resp.responses.length)];
-            }
-        }
-    }
-
-    //if we get to here then check if the comment contains one of
-    //our key phrases and send back a response.
-    for(let i = 0; i < responses.messages.length; i++) {
-        let resp = responses.messages[i];
-        let regex = new RegExp(resp.pattern, 'gi');
-        let matches = regex.exec(comment.body);
-
-        if (matches && matches.length > 0) {
-            //Check the ignore pattern.
-            if (resp.ignorePattern) {
-                let ignoreRegex = new RegExp(resp.ignorePattern, 'gi');
-                let ignoreMatches = ignoreRegex.exec(comment.body);
-
-                if (ignoreMatches && ignoreMatches.length > 0)
-                    return;
-            }
-
-            let message;
-
-            //if the response contains an array of responses, then pick
-            //a random response.
-            if (resp.responses)
-                message = resp.responses[Math.floor(Math.random() * resp.responses.length)];
-            else
-                message = resp.response;
-
-            //Check if the message contains any keywords.
-            if (message.indexOf('$username') > -1) {
-                message = message.replace('$username', comment.author.name);
-            }
-
-            return message;
-        }
-    }
-
-    return null;
-}

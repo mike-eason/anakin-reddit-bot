@@ -6,8 +6,8 @@
                 "May the force be with you.",
                 "Thank you, master.",
                 "Yippee!",
-                "This is where the fun begins!",
-                "[This is where the fun begins](https://media.giphy.com/media/3se2U9ZAJr7DW/giphy.gif)",
+                "This is where the fun begins.",
+                "[This is where the fun begins.](https://media.giphy.com/media/3se2U9ZAJr7DW/giphy.gif)",
                 "Now this is shit-posting!",
                 "Are you an angel?",
                 "You love me? I thought we had decided not to fall in love. That we'd be forced to live a lie and that it would destroy our lives.",
@@ -88,7 +88,10 @@
         },
         {
             "pattern": "my allegiance is to (.*), to (.*)[.!]?$",
-            "response": "If you're not with me, then you are my enemy."
+            "responses": [
+                "If you're not with me, then you are my enemy.",
+                "If you're not OC, then you are a repost."
+            ]
         },
         {
             "pattern": "i will do what i must[.!]?$",
@@ -106,7 +109,9 @@
         },
         {
             "pattern": "(did you|have you) ever heard? the (.*) of (.*)\\?$",
-            "response": "No?"
+            "responses": [
+                "No?"
+            ]
         },
         {
             "pattern": "he could even keep the ones he cared about from ([a-zA-Z\\s]*)[.]?$",
@@ -119,18 +124,24 @@
         },
         {
             "pattern": "is a pathway to many abilities some consider to be unnatural[.]?$",
-            "response": "What happened to him?"
+            "responses": [
+                "What happened to him?"
+            ]
         },
         {
-            "pattern": "could save others from (.*)(,?)(.{0,}?) but not (himself|herself|itself|themself|themselves)[.!]?$",
-            "response": "Is it possible to learn this power?"
+            "pattern": "could save others from (.*)(,?)(.{0,}?) but not ([a-zA-Z\\s]*)[.!]?$",
+            "responses": [
+                "Is it possible to learn this power?"
+            ]
         },
         {
             "pattern": "you[']?re a slave\\?$",
-            "response": "I am a bot and my name is Anakin."
+            "responses": [
+                "I am a bot and my name is Anakin."
+            ]
         },
         {
-            "pattern": "not just the (.*)[,.]? but the (.*)[,]? and the (.*) too[.!]?$",
+            "pattern": "not just the (.*) but the (.*) and the (.*) too[.!]?$",
             "responses": [
                 "I hate them!",
                 "They were like animals, and I slaughtered them like animals!",
@@ -140,28 +151,35 @@
         },
         {
             "pattern": "don'?t look at me like that[.!]?$",
-            "response": "Why not?"
+            "responses": [
+                "Why not?"
+            ]
         },
         {
             "pattern": "it makes me feel uncomfortable[.]?$",
-            "response": "Sorry m'lady"
+            "responses": [
+                "Sorry m'lady."
+            ]
         },
         {
             "pattern": "my goodness,? you'?ve grown[.!]?$",
             "responses": [
-                "So have you, grown more beautiful... for a human, I mean.",
-                "So have you, grown more beautiful... for a senator, I mean."
+                "So have you, grown more beautiful... For a human, I mean.",
+                "So have you, grown more beautiful... For a senator, I mean."
             ]
         },
         {
             "pattern": "told me terrible things!?$",
-            "response": "What things?"
+            "responses": [
+                "What things?"
+            ]
         },
         {
-            "pattern": "that you(\\.{0,}|,) killed (.*)[.!]?$",
+            "pattern": "that you(\\.{0,}|,) killed (.*)$",
             "responses": [
                 "Obi-Wan is trying to turn you against me.",
-                "The moderators are trying to turn you against me."
+                "The moderators are trying to turn you against me.",
+                "/r/SequelMemes are trying to turn you against me."
             ]
         },
         {
@@ -173,15 +191,26 @@
         },
         {
             "pattern": "we can discover the secret to (.*)$",
-            "response": "I pledge myself to your teachings."
+            "responses": [
+                "I pledge myself to your teachings."
+            ]
         },
         {
             "pattern": "you have done that yourself[.!]?$",
-            "response": "You will not take her from me!"
+            "responses": [
+                "You will not take her from me!",
+                "You will not take OC from me!",
+                "You will not take karma from me!"
+            ]
         },
         {
             "pattern": "a sith lord\\?(!{0,})$",
-            "response": "Yes, the one we've been looking for."
+            "responses": [
+                "Yes, the one we've been looking for.",
+                "Yes, the shit-post we've been looking for.",
+                "Yes, the repost we've been looking for.",
+                "Yes, the sequel meme we've been looking for."
+            ]
         },
         {
             "pattern": "i have failed you[.!]?$",
@@ -199,7 +228,9 @@
         },
         {
             "pattern": "don'?t try it[.!]?$",
-            "response": "*autistic jumping*"
+            "responses": [
+                "*autistic jumping*"
+            ]
         }
     ]
 }

@@ -4,8 +4,8 @@
   "description": "A stupid bot that responds to the darth plaguies story.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jasmine"
   },
   "author": "/u/BlahYourHamster",
   "license": "MIT",
@@ -13,5 +13,8 @@
     "dotenv": "^4.0.0",
     "snoostorm": "0.0.5",
     "snoowrap": "^1.14.2"
+  },
+  "devDependencies": {
+    "jasmine": "^2.8.0"
   }
 }
