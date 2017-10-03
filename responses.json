@@ -34,6 +34,12 @@
                 "I sense Count Dooku.",
                 "[autistic crying](http://pa1.narvii.com/6402/40628693bbd4cb36f22593352dbc1781c5a92799_hq.gif)"
             ]
+        },
+        {
+            "pattern": "bot",
+            "responses": [
+                "I am a person and my name is Anakin."
+            ]
         }
     ],
     "messages": [
@@ -41,7 +47,7 @@
             "pattern": "may the force be with you[.]?$",
             "responses": [
                 "May the force be with you, Master.",
-                "May the force be with you, $username."
+                "May the force be with you, /u/$username."
             ]
         },
         {
@@ -49,19 +55,19 @@
             "responses": [
                 "You underestimate my power!",
                 "You underestimate my shit-posts!",
+                "You underestimate my sith-posts!",
                 "You underestimate my reposts!"
             ]
         },
         {
             "pattern": "(is|are) evil[.!]?$",
-            "ignorePattern": "(jedi|\/r\/prequelmemes|\/r\/sequelmemes|oc|the mod(erators|s)|you) (is|are) evil[.!]?$",
             "responses": [
                 "From my point of view the Jedi are evil!",
                 "From my point of view /r/PrequelMemes is evil!",
                 "From my point of view /r/SequelMemes is evil!",
                 "From my point of view OC is evil!",
                 "From my point of view the moderators are evil!",
-                "From my point of view **you** are evil!"
+                "From my point of view it's **you** who is evil!"
             ]
         },
         {
@@ -151,6 +157,7 @@
                 "I hate them!",
                 "They were like animals, and I slaughtered them like animals!",
                 "They were shit-posts, and I downvoted them like shit-posts!",
+                "They were sith-posts, and I downvoted them like sith-posts!",
                 "They were reposts, and I downvoted them like reposts!"
             ]
         },
@@ -170,7 +177,8 @@
             "pattern": "my goodness,? you'?ve grown[.!]?$",
             "responses": [
                 "So have you, grown more beautiful... For a human, I mean.",
-                "So have you, grown more beautiful... For a senator, I mean."
+                "So have you, grown more beautiful... For a senator, I mean.",
+                "So have you, grown more beautiful... For a redditor, I mean."
             ]
         },
         {
@@ -190,8 +198,9 @@
         {
             "pattern": "all I want is your love[.!]?$",
             "responses": [
-                "Love won't save you, $username. Only my new powers can do that!",
-                "Love won't save you, $username. Only my new shit-posts can do that!"
+                "Love won't save you, /u/$username. Only my new powers can do that!",
+                "Love won't save you, /u/$username. Only my new shit-posts can do that!",
+                "Love won't save you, /u/$username. Only my new sith-posts can do that!"
             ]
         },
         {
@@ -209,10 +218,11 @@
             ]
         },
         {
-            "pattern": "a sith lord\\?(!{0,})$",
+            "pattern": "a (\\w*) lord\\?(!{0,})$",
             "responses": [
                 "Yes, the one we've been looking for.",
                 "Yes, the shit-post we've been looking for.",
+                "Yes, the sith-post we've been looking for.",
                 "Yes, the repost we've been looking for.",
                 "Yes, the sequel meme we've been looking for."
             ]
@@ -228,13 +238,13 @@
             "pattern": "then you are lost!{0,}$",
             "responses": [
                 "This is the end for you, my master.",
-                "This is the end for you, $username"
+                "This is the end for you, /u/$username"
             ]
         },
         {
-            "pattern": "don'?t try it[.!]?$",
+            "pattern": "anakin[,.]? g(o{2,})d[.!]?$",
             "responses": [
-                "*autistic jumping*"
+                "I should not have done that, it's not the Jedi way."
             ]
         }
     ]
