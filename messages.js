@@ -8,16 +8,6 @@ function extractMessage(comment, resp) {
     let message = null;
 
     if (matches && matches.length > 0) {
-        //If there is an ignore pattern, execute that and check
-        //if we need to ignore this comment.
-        if (resp.ignorePattern) {
-            let ignoreRegex = new RegExp(resp.ignorePattern, 'gi');
-            let ignoreMatches = ignoreRegex.exec(comment.body);
-
-            if (ignoreMatches && ignoreMatches.length > 0)
-                return null;
-        }
-
         //if we get to here then we can extract a response. 
         //Pick a random response to send back.
         if (resp.responses)
@@ -50,7 +40,16 @@ function extractMessage(comment, resp) {
         message = message.replace('$username', comment.author.name);
     }
 
+    if (message)
+        message = appendFooter(message);
+
     return message;
+}
+
+function appendFooter(message) {
+    return message + `
+*****
+^[Source](https://github.com/mike-eason/anakin-reddit-bot) ^| ^[Issues](https://github.com/mike-eason/anakin-reddit-bot/issues)`;
 }
 
 module.exports = {
@@ -71,9 +70,6 @@ module.exports = {
                 if (message)
                     return message;
             }
-
-            //Always exit out if the comment is a reply to one of ours.
-            return null;
         }
     
         //if we get to here then check if the comment contains one of

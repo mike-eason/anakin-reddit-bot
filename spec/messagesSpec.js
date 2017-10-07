@@ -56,19 +56,6 @@ describe('messages and responses', () => {
         expect(message).toContain(comment.author.name);
     });
 
-    it('should check the ignore pattern', () => {
-        let comment = {
-            body: `The Jedi are evil!`,
-            author: {
-                name: 'user_123456789'
-            }
-        };
-
-        let message = messages.extractReply(comment);
-
-        expect(message).toBeNull();
-    });
-    
     it('should reply to a user if good bot is mentioned.', () => {
         let comment = {
             parent_id: '123',
@@ -101,22 +88,6 @@ describe('messages and responses', () => {
         expect(message).not.toBeNull();
     });
     
-    it('should not reply to a user if neither good bot or bad bot is mentioned.', () => {
-        let comment = {
-            parent_id: '123',
-            body: `It's over Anakin, I have the high ground!`,
-            author: {
-                name: 'user_123456789'
-            }
-        };
-
-        let prevCommentIds = [comment.parent_id];
-
-        let message = messages.extractReply(comment, prevCommentIds);
-
-        expect(message).toBeNull();
-    });
-
     it('should not reply to itself', () => {
         let comment = {
             body: `It's over Anakin, I have the high ground!`,
@@ -132,7 +103,7 @@ describe('messages and responses', () => {
 
     it('should replace group match keywords with text contained in the comment', () => {
         let comment = {
-            body: `The chancellor was right, you've changed.`,
+            body: `He could even keep the ones he cared about from memes.`,
             author: {
                 name: 'user_123456789'
             }
@@ -141,6 +112,6 @@ describe('messages and responses', () => {
         let message = messages.extractReply(comment);
 
         expect(message).not.toBeNull();
-        expect(message).toContain('The chancellor');
+        expect(message).toContain('memes');
     });
 });

@@ -1,29 +1,31 @@
 # Anakin Bot
-A stupid reddit bot that responds to movie quotes from comments in [/r/PrequelMemes](https://www.reddit.com/r/PrequelMemes).
+A reddit bot that responds to movie quotes from comments in [/r/PrequelMemes](https://www.reddit.com/r/PrequelMemes). It uses [**Regular Expressions**](https://en.wikipedia.org/wiki/Regular_expression) to influence the comments to create... Memes.
 
-## Installation
+### Conditions
+In [responses.json](responses.json) defines all of the possible comments to look for and defines arrays of possible responses to said comments. The bot will look for a key phrase using a regular expression and will pick a random response upon finding one.
 
-1. Create a **script** reddit application in the **apps** tab on [reddit preferences](https://www.reddit.com/prefs/).
-2. Clone the repo and `npm install`.
-3. Add a `.env` file with the following variables:
+The bot will also keep track of what comments it has sent and will perform additional checks to common replies such as `"Good bot"` or `"Bad bot"`.
+
+### Example
+Here is an example regular expression:
 
 ```
-CLIENT_ID=...
-CLIENT_SECRET=...
-REDDIT_USER=...
-REDDIT_PASS=...
+(did you|have you) ever heard? the (.*) of (.*)\?$
 ```
 
-- `CLIENT_ID` - The reddit app client ID.
-- `CLIENT_SECRET` - The reddit app client secret key.
-- `REDDIT_USER_AGENT` - The user agent to use for reddit API requests. (Just use your reddit app name)
-- `REDDIT_USER` - The username the bot will be running on.
-- `REDDIT_PASS` - The password for the reddit user.
+To satisfy this condition, a comment will look like this:
 
-Use `npm start` to start the bot and `npm test` to run tests.
+>Did you ever hear the ... of ...?
+
+*Note: Almost all of the regular expressions end with `$`, this denotes that the comment must **end with** the phrase. It just ensures that the bot is responding in the right context.*
 
 ## Contributing
-Feel free to fork the project and make a pull request with some nice new features.
+- Check the project issues for any jobs that need help.
+- Feel free to fork the project and make a pull request with some nice new features. We can never have too many comment responses.
+- Submit an issue if you have an idea for a comment response and are not sure how to implement it or if you have any other issue with the bot.
+
+## Testing
+If you are submitting a pull request, please run the tests first (`npm test`) and ensure that they are all successful. If you are adding a major new feature, please write tests as well.
 
 ## License
 [MIT](LICENSE)

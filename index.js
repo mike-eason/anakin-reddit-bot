@@ -15,13 +15,13 @@ const reddit = new Snoowrap({
 const client = new Snoostorm(reddit);
 
 const stream = client.CommentStream({
-    subreddit: 'PrequelMemes',
+    subreddit: 'testingground4bots',
     results: 100
 });
 
 //Keep track of everything we have commented on, if we
 //find a reply to one of our comments we can check for a reply.
-let commentIds = []; //TODO: This technique could be better.
+let commentIds = []; //TODO: This technique could be better I suppose.
 
 stream.on('comment', comment => {
     console.log(`${comment.author.name}: ${comment.body}`);
