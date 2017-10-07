@@ -15,7 +15,7 @@ const reddit = new Snoowrap({
 const client = new Snoostorm(reddit);
 
 const stream = client.CommentStream({
-    subreddit: 'testingground4bots',
+    subreddit: 'PrequelMemes',
     results: 100
 });
 
