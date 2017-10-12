@@ -114,4 +114,30 @@ describe('messages and responses', () => {
         expect(message).not.toBeNull();
         expect(message).toContain('memes');
     });
+
+    it('should contain the github source url', () => {
+        let comment = {
+            body: `it's over anakin, i have the high ground!`,
+            author: {
+                name: 'user_123456789'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+
+        expect(message).toContain(process.env.GITHUB_SOURCE_URL);
+    });
+    
+    it('should contain the github issues url', () => {
+        let comment = {
+            body: `it's over anakin, i have the high ground!`,
+            author: {
+                name: 'user_123456789'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+
+        expect(message).toContain(process.env.GITHUB_ISSUES_URL);
+    });
 });
