@@ -47,9 +47,13 @@ function extractMessage(comment, resp) {
 }
 
 function appendFooter(message) {
+    //Get a random footer source text.
+    let sourceText = responses.footer.sourceCodeTexts[Math.floor(Math.random() * responses.footer.sourceCodeTexts.length)];
+    let issuesText = responses.footer.issuesTexts[Math.floor(Math.random() * responses.footer.issuesTexts.length)];
+
     return message + `
 *****
-^[Source](https://github.com/mike-eason/anakin-reddit-bot) ^| ^[Issues](https://github.com/mike-eason/anakin-reddit-bot/issues)`;
+[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
 }
 
 module.exports = {
