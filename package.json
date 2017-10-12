@@ -17,7 +17,7 @@
   "devDependencies": {
     "jasmine": "^2.8.0"
   },
-  "contributors": {
-    "u/redwallguy"
-  }
+  "contributors": [
+    "/u/redwallguy"
+  ]
 }
