@@ -27,7 +27,7 @@ function extractMessage(comment, resp) {
             if (Number.isNaN(index))
                 break;
 
-            let origGroup = matches[index + 1].trim();
+            let origGroup = matches[index + 1].trim(); //returns captured group (...) in regex
 
             message = message.replace(identifier, origGroup);
 

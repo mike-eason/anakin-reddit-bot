@@ -1,13 +1,13 @@
 {
   "name": "anakin-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A stupid bot that responds to the darth plaguies story.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "jasmine"
   },
-  "author": "/u/BlahYourHamster",
+  "author": "/u/BlahYourHamster, modified by u/redwallguy",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
