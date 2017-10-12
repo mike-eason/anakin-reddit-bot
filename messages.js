@@ -82,8 +82,6 @@ module.exports = {
             let resp = responses.messages[i];
             let message = extractMessage(comment, resp);
     
-            console.log(message);
-            
             if (message)
                 return message;
         }
