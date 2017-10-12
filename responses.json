@@ -1,13 +1,12 @@
 {
     "replies": [
         {
-            "pattern": "good bot[.!]?$",
+            "pattern": "good bot",
             "responses": [
                 "May the force be with you.",
                 "Thank you, master.",
                 "Yippee!",
                 "This is where the fun begins.",
-                "[This is where the fun begins.](https://media.giphy.com/media/3se2U9ZAJr7DW/giphy.gif)",
                 "Now this is shit-posting!",
                 "Are you an angel?",
                 "You love me? I thought we had decided not to fall in love. That we'd be forced to live a lie and that it would destroy our lives.",
@@ -17,9 +16,9 @@
             ]
         },
         {
-            "pattern": "bad bot[.!]?$",
+            "pattern": "bad bot",
             "responses": [
-                "I'm not the bot I should be.",
+                "I'm not the bot I should be. I want more. And I know I shouldn't.",
                 "You underestimate my power!",
                 "The Jedi turned against me. Don't you turn against me.",
                 "The moderators turned against me. Don't you turn against me.",
@@ -32,7 +31,9 @@
                 "I'm a slow learner.",
                 "Obi-Wan is trying to turn you against me.",
                 "I sense Count Dooku.",
-                "[autistic crying](http://pa1.narvii.com/6402/40628693bbd4cb36f22593352dbc1781c5a92799_hq.gif)"
+                "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
+                "I've got a bad feeling about this.",
+                "I feel lost."
             ]
         },
         {
@@ -104,8 +105,7 @@
         {
             "pattern": "i will do what i must[.!]?$",
             "responses": [
-                "You will try.",
-                "[You will try.](http://33.media.tumblr.com/df29f1821dbdb9bb36413ae8aaee31a7/tumblr_n2cwqhYPrD1shtvxho2_250.gif)"
+                "You will try."
             ]
         },
         {
@@ -245,6 +245,12 @@
             "pattern": "anakin[,.]? g(o{2,})d[.!]?$",
             "responses": [
                 "I should not have done that, it's not the Jedi way."
+            ]
+        },
+        {
+            "pattern": "i promise you.?$",
+            "responses": [
+                "No, I promise you."
             ]
         }
     ]
