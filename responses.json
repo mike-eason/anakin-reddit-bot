@@ -256,18 +256,18 @@
     ],
     "footer": {
         "sourceCodeTexts": [
-            "Source Code",
-            "Contribute",
-            "Jedi Code",
-            "Contribute to my new empire",
-            "Influence the source code to create... Memes."
+            "^^Source ^^Code",
+            "^^Contribute",
+            "^^Jedi ^^Code",
+            "^^Contribute ^^to ^^my ^^new ^^empire",
+            "^^Influence ^^the ^^source ^^code ^^to ^^create... ^^Memes."
         ],
         "issuesTexts": [
-            "Issues",
-            "Report a bug",
-            "Report a problem",
-            "Report a youngling",
-            "Report a Sith bug"
+            "^^Issues",
+            "^^Report ^^a ^^bug",
+            "^^Report ^^a ^^problem",
+            "^^Report ^^a ^^youngling",
+            "^^Report ^^a ^^Sith ^^bug"
         ]
     }
 }
