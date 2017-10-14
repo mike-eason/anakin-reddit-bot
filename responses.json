@@ -31,7 +31,7 @@
                 "I'm a slow learner.",
                 "Obi-Wan is trying to turn you against me.",
                 "I sense Count Dooku.",
-		        "This is outrageous! It's unfair! How can you be beloved by r/PrequelMemes and be a bad bot?",
+                "This is outrageous! It's unfair! How can you be beloved by r/PrequelMemes and be a bad bot?",
                 "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
                 "I've got a bad feeling about this.",
                 "I feel lost."
@@ -246,17 +246,17 @@
             "pattern": "anakin[,.]? g(o{2,})d[.!]?$",
             "responses": [
                 "I should not have done that, it's not the Jedi way.",
-		        "I should not have done that, it's not the r/prequelmemes way."
+                "I should not have done that, it's not the r/PrequelMemes way."
             ]
         },
         {
-	     "pattern": "it seems,? in your ([a-zA-Z\\s]*),? you killed ([a-zA-Z\\s]*)[.]$",
-	     "responses": [
-            "NOOOOOOOOOOOOOO!",
-            "Do not want."
-	     ]
-	 },
-	 {
+            "pattern": "it seems,? in your ([a-zA-Z\\s]*),? you killed ([a-zA-Z\\s]*)[.]$",
+            "responses": [
+                "NOOOOOOOOOOOOOO!",
+                "Do not want."
+            ]
+        },
+        {
             "pattern": "i promise you.?$",
             "responses": [
                 "No, I promise you."
@@ -265,18 +265,18 @@
     ],
     "footer": {
         "sourceCodeTexts": [
-            "^^Source ^^Code",
-            "^^Contribute",
-            "^^Jedi ^^Code",
-            "^^Contribute ^^to ^^my ^^new ^^empire",
-            "^^Influence ^^the ^^source ^^code ^^to ^^create... ^^Memes"
+            "^Source ^Code",
+            "^Contribute",
+            "^Jedi ^Code",
+            "^Contribute ^to ^my ^new ^empire",
+            "^Influence ^the ^source ^code ^to ^create... ^Memes"
         ],
         "issuesTexts": [
-            "^^Issues",
-            "^^Report ^^a ^^bug",
-            "^^Report ^^a ^^problem",
-            "^^Report ^^a ^^youngling",
-            "^^Report ^^a ^^Sith ^^bug"
+            "^Issues",
+            "^Report ^a ^bug",
+            "^Report ^a ^problem",
+            "^Report ^a ^youngling",
+            "^Report ^a ^Sith ^bug"
         ]
     }
 }
