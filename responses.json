@@ -7,12 +7,14 @@
                 "Thank you, master.",
                 "Yippee!",
                 "This is where the fun begins.",
+                "[This is where the fun begins.](https://68.media.tumblr.com/8e8e249cd3ce3e4e0e250089cb043a65/tumblr_inline_ovgcvzb7ch1v6lksp_540.gif)",
                 "Now this is shit-posting!",
                 "Are you an angel?",
                 "You love me? I thought we had decided not to fall in love. That we'd be forced to live a lie and that it would destroy our lives.",
                 "Thank you, your excellency.",
                 "You're a Jedi Knight, aren't you?",
-                "You are so... beautiful."
+                "You are so... beautiful.",
+                "[You are so... beautiful.](https://68.media.tumblr.com/527595e44d61456a651e7291557bbeeb/tumblr_ny2j2q8qKB1rjhloyo1_500.gif)"
             ]
         },
         {
@@ -20,9 +22,12 @@
             "responses": [
                 "I'm not the bot I should be. I want more. And I know I shouldn't.",
                 "You underestimate my power!",
+                "[You underestimate my power!](http://www.reactiongifs.com/wp-content/uploads/2013/11/yump.gif)",
                 "The Jedi turned against me. Don't you turn against me.",
                 "The moderators turned against me. Don't you turn against me.",
                 "Liar!",
+                "[Liar!!!](https://media.giphy.com/media/gykAKR7xaV83K/giphy.gif)",
+                "[Mom, you said that the biggest problem in the universe is no one helps each other.](https://media.giphy.com/media/3owzVT0goXzoxgxMRi/giphy.gif)",
                 "Mom, you said that the biggest problem in the universe is no one helps each other.",
                 "Don't say that, master. You're the closest thing I have to a father.",
                 "Then you do feel something!",
@@ -32,15 +37,18 @@
                 "Obi-Wan is trying to turn you against me.",
                 "I sense Count Dooku.",
                 "This is outrageous! It's unfair! How can you be beloved by r/PrequelMemes and be a bad bot?",
+                "[I don't like sand. It's coarse and rough and irritating and it gets everywhere.](https://media.giphy.com/media/l1KsPfb1CeYCdglS8/giphy.gif)",
                 "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
                 "I've got a bad feeling about this.",
+                "[I've got a bad feeling about this.](https://futureofstarwars.files.wordpress.com/2016/01/ihaveabadfeeling-anakin-epii.gif)",
                 "I feel lost."
             ]
         },
         {
             "pattern": "\\bbot\\b",
             "responses": [
-                "I am a person and my name is Anakin."
+                "I am a person and my name is Anakin.",
+                "[I am a person and my name is Anakin.](http://24.media.tumblr.com/tumblr_m2d149jr0i1qgzqnco1_500.gif)"
             ]
         }
     ],
@@ -86,7 +94,9 @@
             "responses": [
                 "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire.",
                 "Don't lecture me, /u/$username! I see through the lies of /r/PrequelMemes. I do not fear the reposts as you do. I have brought Gifs, OC, memes, and upvotes to my new Empire.",
-                "Don't lecture me, /u/$username! I see through the lies of /r/SequelMemes. I do not fear the shit-posts as you do. I have brought JPEGs, reposts, normies, and downvotes to my new Empire."
+                "Don't lecture me, /u/$username! I see through the lies of /r/SequelMemes. I do not fear the shit-posts as you do. I have brought JPEGs, reposts, normies, and downvotes to my new Empire.",
+                "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. [I have brought peace, freedom, justice, and security to my new Empire.](http://images5.fanpop.com/image/photos/28100000/Anakin-Skywalker-anakin-skywalker-28105845-260-157.gif)"
+
             ]
         },
         {
@@ -113,7 +123,9 @@
             "pattern": "bring balance to (.*),? not leave it in (.*)[.!]?$",
             "responses": [
                 "I hate you!",
-                "I HATE YOU!"
+                "I HATE YOU!",
+                "[I hate you!](https://media.giphy.com/media/Mir5fnHxvXrTa/giphy.gif)",
+                "[I HATE YOU!](https://media.giphy.com/media/Mir5fnHxvXrTa/giphy.gif)"
             ]
         },
         {
@@ -143,7 +155,9 @@
         {
             "pattern": "could save others from (.*) but not ([a-zA-Z\\s]*)[.!]?$",
             "responses": [
-                "Is it possible to learn this power?"
+                "Is it possible to learn this power?",
+                "[Is it possible to learn this power?](http://data.whicdn.com/images/220172968/original.gif)"
+
             ]
         },
         {
