@@ -53,7 +53,7 @@ function appendFooter(message) {
 
     return message + `
 *****
-[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
+[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
 }
 
 module.exports = {
