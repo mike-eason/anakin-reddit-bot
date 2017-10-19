@@ -53,6 +53,8 @@ function appendFooter(message) {
 
     return message + `
 *****
+^Virtual ^master ^((and sleeping with Padmè)^) ^Anakin ^Botwalker
+
 [${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
 }
 
