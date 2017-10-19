@@ -115,6 +115,32 @@ describe('messages and responses', () => {
         expect(message).toContain('memes');
     });
 
+    it('should respond to commands', () => {
+        let comment = {
+            body: `Anakin, !dewit`,
+            author: {
+                name: 'user_123456789'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+
+        expect(message).not.toBeNull();
+    });
+
+    it('should not respond to malformed commands', () => {
+        let comment = {
+            body: `!dewittt`,
+            author: {
+                name: 'user_123456789'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+
+        expect(message).toBeNull();
+    });
+
     it('should contain the github source url', () => {
         let comment = {
             body: `it's over anakin, i have the high ground!`,

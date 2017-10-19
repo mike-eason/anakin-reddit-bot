@@ -46,7 +46,7 @@
                 "I'm a slow learner.",
                 "Obi-Wan is trying to turn you against me.",
                 "I sense Count Dooku.",
-                "This is outrageous! It's unfair! How can you be beloved by r/PrequelMemes and be a bad bot?",
+                "This is outrageous! It's unfair! How can you be beloved by /r/PrequelMemes and be a bad bot?",
                 "[I don't like sand. It's coarse and rough and irritating and it gets everywhere.](https://media.giphy.com/media/l1KsPfb1CeYCdglS8/giphy.gif)",
                 "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
                 "I've got a bad feeling about this.",
@@ -276,7 +276,7 @@
             "pattern": "anakin[,.]? g(o{2,})d[.!]?$",
             "responses": [
                 "I should not have done that, it's not the Jedi way.",
-                "I should not have done that, it's not the r/PrequelMemes way."
+                "I should not have done that, it's not the /r/PrequelMemes way."
             ]
         },
         {
@@ -299,13 +299,47 @@
             ]
         }
     ],
+    "commands": [
+        {
+            "pattern": "\\B!dewit\\b",
+            "responses": [
+                "I should not have done that, it's not the Jedi way.",
+                "I should not have done that, it's not the /r/PrequelMemes way.",
+                "*does it.*"
+            ]
+        },
+        {
+            "pattern": "\\B!spin\\b",
+            "responses": [
+                "Waaaaah!",
+                "I'll try spinning, that's a good trick!",
+                "[I'll try spinning, that's a good trick!](http://i0.kym-cdn.com/photos/images/newsfeed/001/075/929/4a5.gif)",
+                "Try spinning, it's a good trick."
+            ]
+        },
+        {
+            "pattern": "\\B!youngling\\b",
+            "responses": [
+                "Don't make me kill you.",
+                "[I killed them all!](https://i.makeagif.com/media/12-05-2015/AVCq_R.gif)"
+            ]
+        },
+        {
+            "pattern": "\\B!sand\\b",
+            "responses": [
+                "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
+                "[I don't like sand. It's coarse and rough and irritating and it gets everywhere.](https://media.giphy.com/media/l1KsPfb1CeYCdglS8/giphy.gif)",
+                "Don't make me kill you."
+            ]
+        }
+    ],
     "footer": {
         "signatures": [
             "^Virtual ^master ^((and the **Chosen One**)^) ^Anakin ^Botwalker",
             "^Virtual ^master ^((and sleeping with Padmè)^) ^Anakin ^Botwalker",
             "^Virtual ^master ^((and sees through the lies of the Jedi)^) ^Anakin ^Botwalker",
-            "^Virtual ^master ^((and sees through the lies of the /r/SequelMemes)^) ^Anakin ^Botwalker",
-            "^Virtual ^master ^((and sees through the lies of the /r/PrequelMemes)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sees through the lies of /r/SequelMemes)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sees through the lies of /r/PrequelMemes)^) ^Anakin ^Botwalker",
             "^Virtual ^master ^((and sees through the lies of /u/Obi-Wan-Kenboti)^) ^Anakin ^Botwalker",
             "^Virtual ^master ^((and the only human who can pod race)^) ^Anakin ^Botwalker"
         ],

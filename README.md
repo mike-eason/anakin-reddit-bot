@@ -6,6 +6,16 @@ In [responses.json](responses.json) defines all of the possible comments to look
 
 The bot will also keep track of what comments it has sent and will perform additional checks to common replies such as `"Good bot"` or `"Bad bot"`.
 
+### Commands
+The bot will respond to the following commands:
+
+- `!dewit`
+- `!spin`
+- `!youngling`
+- `!sand`
+
+*Note: To summon the bot, your comment only needs to contain one of these strings. You do not need to put the bot's username in the comment.*
+
 ### Example
 Here is an example regular expression:
 
