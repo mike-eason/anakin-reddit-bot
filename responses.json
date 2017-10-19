@@ -14,7 +14,16 @@
                 "Thank you, your excellency.",
                 "You're a Jedi Knight, aren't you?",
                 "You are so... beautiful.",
-                "[You are so... beautiful.](https://68.media.tumblr.com/527595e44d61456a651e7291557bbeeb/tumblr_ny2j2q8qKB1rjhloyo1_500.gif)"
+                "[You are so... beautiful.](https://68.media.tumblr.com/527595e44d61456a651e7291557bbeeb/tumblr_ny2j2q8qKB1rjhloyo1_500.gif)",
+                "I was glad to meet you too!",
+                "These are my friends, Mom.",
+                "I'm building a droid, wanna see?",
+                "Have you come to free me? I think you have.",
+                "IT'S WORKING, IT'S WORKING!",
+                "Do you mean that I get to go with you on your starship?!",
+                "You're a Jedi too? Pleased to meet you.",
+                "Thank you, your highness.",
+                "Shields up!"
             ]
         },
         {
@@ -26,13 +35,14 @@
                 "The Jedi turned against me. Don't you turn against me.",
                 "The moderators turned against me. Don't you turn against me.",
                 "Liar!",
-                "[Liar!!!](https://media.giphy.com/media/gykAKR7xaV83K/giphy.gif)",
+                "[Liar!](https://media.giphy.com/media/gykAKR7xaV83K/giphy.gif)",
                 "[Mom, you said that the biggest problem in the universe is no one helps each other.](https://media.giphy.com/media/3owzVT0goXzoxgxMRi/giphy.gif)",
                 "Mom, you said that the biggest problem in the universe is no one helps each other.",
                 "Don't say that, master. You're the closest thing I have to a father.",
                 "Then you do feel something!",
                 "Someday I will be the most powerful bot ever.",
                 "It's all Obi-Wan's fault. He's jealous. He's holding me back!",
+                "It's all /u/Obi-Wan-Kenboti's fault. He's jealous. He's holding me back!",
                 "I'm a slow learner.",
                 "Obi-Wan is trying to turn you against me.",
                 "I sense Count Dooku.",
@@ -41,14 +51,20 @@
                 "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
                 "I've got a bad feeling about this.",
                 "[I've got a bad feeling about this.](https://futureofstarwars.files.wordpress.com/2016/01/ihaveabadfeeling-anakin-epii.gif)",
-                "I feel lost."
+                "I feel lost.",
+                "Are you a protocol droid? To help Mom?",
+                "Don't count on it, slime ball.",
+                "R2, get us off this auto-pilot, it's gonna get us both killed.",
+                "Qui-Gon told me to stay in this cockpit, so that's what I'm gonna do.",
+                "I'll try spinning, that's a good trick!"
             ]
         },
         {
             "pattern": "\\bbot\\b",
             "responses": [
                 "I am a person and my name is Anakin.",
-                "[I am a person and my name is Anakin.](http://24.media.tumblr.com/tumblr_m2d149jr0i1qgzqnco1_500.gif)"
+                "[I am a person and my name is Anakin.](http://24.media.tumblr.com/tumblr_m2d149jr0i1qgzqnco1_500.gif)",
+                "I'm a pilot y'know, and someday I'm going to fly away from this place."
             ]
         }
     ],
@@ -77,7 +93,8 @@
                 "From my point of view /r/SequelMemes is evil!",
                 "From my point of view OC is evil!",
                 "From my point of view the moderators are evil!",
-                "From my point of view it's **you** who is evil!"
+                "From my point of view it's **you** who is evil!",
+                "From my point of view /u/Obi-Wan-Kenboti is evil!"
             ]
         },
         {
@@ -96,7 +113,6 @@
                 "Don't lecture me, /u/$username! I see through the lies of /r/PrequelMemes. I do not fear the reposts as you do. I have brought Gifs, OC, memes, and upvotes to my new Empire.",
                 "Don't lecture me, /u/$username! I see through the lies of /r/SequelMemes. I do not fear the shit-posts as you do. I have brought JPEGs, reposts, normies, and downvotes to my new Empire.",
                 "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. [I have brought peace, freedom, justice, and security to my new Empire.](http://images5.fanpop.com/image/photos/28100000/Anakin-Skywalker-anakin-skywalker-28105845-260-157.gif)"
-
             ]
         },
         {
@@ -275,9 +291,24 @@
             "responses": [
                 "No, I promise you."
             ]
+        },
+        {
+            "pattern": "we'?re smarter than this[.!]?$",
+            "responses": [
+                "Apparently not."
+            ]
         }
     ],
     "footer": {
+        "signatures": [
+            "^Virtual ^master ^((and the **Chosen One**)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sleeping with Padmè)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sees through the lies of the Jedi)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sees through the lies of the /r/SequelMemes)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sees through the lies of the /r/PrequelMemes)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and sees through the lies of /u/Obi-Wan-Kenboti)^) ^Anakin ^Botwalker",
+            "^Virtual ^master ^((and the only human who can pod race)^) ^Anakin ^Botwalker"
+        ],
         "sourceCodeTexts": [
             "^Source ^Code",
             "^Contribute",

@@ -11,7 +11,7 @@ function extractMessage(comment, resp) {
         //if we get to here then we can extract a response. 
         //Pick a random response to send back.
         if (resp.responses)
-            message = resp.responses[Math.floor(Math.random() * resp.responses.length)];
+            message = getRandomArrayItem(resp.responses);
         else
             message = resp.response;
 
@@ -46,14 +46,19 @@ function extractMessage(comment, resp) {
     return message;
 }
 
+function getRandomArrayItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
 function appendFooter(message) {
     //Get a random footer source text.
-    let sourceText = responses.footer.sourceCodeTexts[Math.floor(Math.random() * responses.footer.sourceCodeTexts.length)];
-    let issuesText = responses.footer.issuesTexts[Math.floor(Math.random() * responses.footer.issuesTexts.length)];
+    let signatureText = getRandomArrayItem(responses.footer.signatures);
+    let sourceText = getRandomArrayItem(responses.footer.sourceCodeTexts);
+    let issuesText = getRandomArrayItem(responses.footer.issuesTexts);
 
     return message + `
 *****
-^Virtual ^master ^((and sleeping with Padmè)^) ^Anakin ^Botwalker
+${signatureText}
 
 [${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
 }
