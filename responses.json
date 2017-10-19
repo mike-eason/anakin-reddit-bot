@@ -116,7 +116,7 @@
             ]
         },
         {
-            "pattern": "your new (\\w*)\\?(\\W*)$",
+            "pattern": "your new .*\\?$",
             "responses": [
                 "Don't make me kill you.",
                 "Don't make me downvote you."
