@@ -60,7 +60,7 @@
             ]
         },
         {
-            "pattern": "(^|\\w|\\s)bot\\b",
+            "pattern": "(^|\\s)bot\\b",
             "responses": [
                 "I am a person and my name is Anakin.",
                 "[I am a person and my name is Anakin.](http://24.media.tumblr.com/tumblr_m2d149jr0i1qgzqnco1_500.gif)",
