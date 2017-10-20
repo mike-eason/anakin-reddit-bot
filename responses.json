@@ -335,27 +335,35 @@
     ],
     "footer": {
         "signatures": [
-            "^Virtual ^Sith ^Lord ^((and the **Chosen One**)^) ^Anakin ^Botwalker",
-            "^Virtual ^Sith ^Lord ^((and sleeping with Padmè)^) ^Anakin ^Botwalker",
-            "^Virtual ^Sith ^Lord ^((and sees through the lies of the Jedi)^) ^Anakin ^Botwalker",
-            "^Virtual ^Sith ^Lord ^((and sees through the lies of /r/SequelMemes)^) ^Anakin ^Botwalker",
-            "^Virtual ^Sith ^Lord ^((and sees through the lies of /r/PrequelMemes)^) ^Anakin ^Botwalker",
-            "^Virtual ^Sith ^Lord ^((and sees through the lies of /u/Obi-Wan-Kenboti)^) ^Anakin ^Botwalker",
-            "^Virtual ^Sith ^Lord ^((and the only human who can pod race)^) ^Anakin ^Botwalker"
+            "^^Anakin ^^Botwalker, ^^Darth ^^Lord ^^of ^^the ^^Sith.",
+            "^^Anakin ^^Botwalker, ^^The ^^Betrayer.",
+            "^^Anakin ^^Botwalker, ^^The ^^Chosen ^^One.",
+            "^^Anakin ^^Botwalker, ^^Jedi ^^Council ^^Member.",
+            "^^Anakin ^^Botwalker, ^^Destroyer ^^of ^^Younglings.",
+            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^the ^^Jedi.",
+            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^the ^^/r/SequelMemes.",
+            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^the ^^/r/PrequelMemes.",
+            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^/u/Obi-Wan-Kenboti.",
+            "^^Anakin ^^Botwalker, ^^The ^^only ^^human ^^who ^^can ^^pod ^^race.",
+            "^^Anakin ^^Botwalker, ^^Actually ^^brought ^^balance ^^to ^^the ^^force ^^\\(in ^^the ^^end).",
+            "^^Anakin ^^Botwalker, ^^Husband ^^to ^^Padmè ^^\\(and ^^is ^^sleeping ^^with ^^her ^^too).",
+            "^^Anakin ^^Botwalker, ^^Bringer ^^of ^^Peace, ^^Freedom, ^^Justice ^^and ^^Security ^^to ^^Empires.",
+            "^^Anakin ^^Botwalker, ^^Best ^^Starpilot ^^in ^^the ^^Galaxy.",
+            "^^Anakin ^^Botwalker ^^of ^^the ^^Jedi ^^Order, ^^First ^^of ^^His ^^Name, ^^The ^^Betrayer, ^^Dark ^^Lord ^^of ^^the ^^Sith ^^and ^^Jedi ^^Council ^^Member, ^^Husband ^^to ^^Padmè, ^^Destroyer ^^of ^^Younglings ^^and ^^Father ^^of ^^Children."
         ],
         "sourceCodeTexts": [
-            "^Source ^Code",
-            "^Contribute",
-            "^Jedi ^Code",
-            "^Contribute ^to ^my ^new ^empire",
-            "^Influence ^the ^source ^code ^to ^create... ^Memes"
+            "^^Source ^^Code",
+            "^^Contribute",
+            "^^Jedi ^^Code",
+            "^^Contribute ^^to ^^my ^^new ^^empire",
+            "^^Influence ^^the ^^source ^^code ^^to ^^create... ^^Memes"
         ],
         "issuesTexts": [
-            "^Issues",
-            "^Report ^a ^bug",
-            "^Report ^a ^problem",
-            "^Report ^a ^youngling",
-            "^Report ^a ^Sith ^bug"
+            "^^Issues",
+            "^^Report ^^a ^^bug",
+            "^^Report ^^a ^^problem",
+            "^^Report ^^a ^^youngling",
+            "^^Report ^^a ^^Sith ^^bug"
         ]
     }
 }
