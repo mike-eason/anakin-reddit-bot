@@ -3,7 +3,7 @@ const responses = require('./responses.json');
 const groupMatchRegex = /\$(\d*)/gi;
 
 function extractMessage(comment, resp) {
-    let regex = new RegExp(resp.pattern, 'gmi');
+    let regex = new RegExp(resp.pattern, 'gi');
     let matches = regex.exec(comment.body);
     let message = null;
 

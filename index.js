@@ -16,7 +16,7 @@ const client = new Snoostorm(reddit);
 
 const stream = client.CommentStream({
     subreddit: process.env.SUBREDDIT,
-    results: 25
+    results: 100
 });
 
 //Keep track of everything we have commented on, if we
@@ -24,8 +24,6 @@ const stream = client.CommentStream({
 let commentIds = []; //TODO: This technique could be better I suppose.
 
 stream.on('comment', comment => {
-    console.log(`${comment.author.name}: ${comment.body}`);
-
     //Go through each possible response and look for a match.
     const reply = messages.extractReply(comment, commentIds);
     

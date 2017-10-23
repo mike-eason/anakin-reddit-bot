@@ -85,7 +85,7 @@
             ]
         },
         {
-            "pattern": "(is|are) evil[.!]?$",
+            "pattern": "point of view.*(is|are) evil[.!]?$",
             "responses": [
                 "From my point of view the Jedi are evil!",
                 "From my point of view /r/PrequelMemes is evil!",
@@ -114,7 +114,7 @@
             ]
         },
         {
-            "pattern": "your new .*\\?$",
+            "pattern": "^your new .*\\?$",
             "responses": [
                 "Don't make me kill you.",
                 "Don't make me downvote you."
@@ -282,12 +282,6 @@
             "responses": [
                 "NOOOOOOOOOOOOOO!",
                 "Do not want."
-            ]
-        },
-        {
-            "pattern": "i promise you.?$",
-            "responses": [
-                "No, I promise you."
             ]
         },
         {
