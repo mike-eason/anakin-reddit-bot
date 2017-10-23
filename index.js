@@ -16,7 +16,7 @@ const client = new Snoostorm(reddit);
 
 const stream = client.CommentStream({
     subreddit: process.env.SUBREDDIT,
-    results: 100
+    results: 25
 });
 
 //Keep track of everything we have commented on, if we
