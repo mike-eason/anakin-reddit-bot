@@ -297,6 +297,12 @@
             "responses": [
                 "Apparently not."
             ]
+        },
+        {
+            "pattern": "oblivion\\!$",
+            "responses": [
+                "Hmmm... yousa point is well seen."
+            ]
         }
     ],
     "commands": [
