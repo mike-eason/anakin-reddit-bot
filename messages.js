@@ -52,15 +52,19 @@ function getRandomArrayItem(arr) {
 
 function appendFooter(message) {
     //Get a random footer source text.
-    let signatureText = getRandomArrayItem(responses.footer.signatures);
-    let sourceText = getRandomArrayItem(responses.footer.sourceCodeTexts);
-    let issuesText = getRandomArrayItem(responses.footer.issuesTexts);
+    let signatureText = replaceSpaces(getRandomArrayItem(responses.footer.signatures));
+    let sourceText = replaceSpaces(getRandomArrayItem(responses.footer.sourceCodeTexts));
+    let issuesText = replaceSpaces(getRandomArrayItem(responses.footer.issuesTexts));
 
     return message + `
 *****
-${signatureText}
+^^${signatureText}
 
-[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
+^^[${sourceText}](${process.env.GITHUB_SOURCE_URL})&#32;|&#32;[${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
+}
+
+function replaceSpaces(text) {
+    return text.replace(new RegExp(' ', 'g'), '&#32;');
 }
 
 function findAndExtractMessage(comment, arr) {
