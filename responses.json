@@ -76,7 +76,7 @@
             ]
         },
         {
-            "pattern": "i have the (.*)high ground[.!]?$",
+            "pattern": "i have the (\\w*) ground[.!]?$",
             "responses": [
                 "You underestimate my power!",
                 "You underestimate my shit-posts!",
@@ -114,7 +114,7 @@
             ]
         },
         {
-            "pattern": "^your new .*\\?$",
+            "pattern": "^your new (\\w*)\\?$",
             "responses": [
                 "Don't make me kill you.",
                 "Don't make me downvote you."
@@ -217,7 +217,7 @@
             ]
         },
         {
-            "pattern": "that you(\\.{0,}|,) killed (.*)$",
+            "pattern": "that you(\\.{0,}|,) killed (\\w*)$",
             "responses": [
                 "Obi-Wan is trying to turn you against me.",
                 "The moderators are trying to turn you against me.",
